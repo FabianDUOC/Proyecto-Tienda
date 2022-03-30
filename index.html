@@ -15,12 +15,30 @@
 </head>
 
 <body>
+      <!--
+    ======================================================================================================= -->
+    <!-- ENCABEZADO -->
+    <!--
+    ======================================================================================================= --> 
+    <header class="container-fluid bg-black text-light
+    d-flex justify-content-center">
+        <p class="text-light mb-0 p-2 fs-6">Despacho sobre $30.000 </p>
+    </header>
+
+    
+    <!--
+    ======================================================================================================= -->
+    <!-- BARRA NAVEGADORA -->
+    <!--
+    ======================================================================================================= --> 
     <div class="container-fluid">
-        <!-- BARRA NAVEGACIÓN -->
-        <div class="bg-light">
-            <nav class="navbar navbar-expand-md navbar-light bg-light border-3 border-bottom border-primary">
+      <div class="bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light  border-bottom p-2 " id="menu">
                 <div class="container-fluid">
-                    <a href="#" class="navbar-brand"> AQUI VA EL LOGOTIPO</a>
+                    <a href="#" class="navbar-brand">
+                     <!-- aqui va el logo superpuesto-->
+                     <span class="text-primary fs-5 fw-bold"> F&M </span>
+                    </a>   
                     <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
                         data-bs-target="#MenuNavegacion">
                         <span class="navbar-toggler-icon"></span>
@@ -52,14 +70,52 @@
                     </ul>
                     <ul class="navbar-nav ms-3">
                         <li class="nav-item">
-                            <a class="nav-link text-nowrap" href="#">Iniciar sesión</a>
+                            <a class="nav-link text-nowrap" href="#">INICIAR SECCION</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
+    </div> 
+    <!--
+    ======================================================================================================= -->
+    <!--SLIDER DE IMAGENES -->
+    <!--
+    ======================================================================================================= --> 
+<div class="container-fluid">
+  <div class="row">
+    <div class="col" id="slider">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000"><!-- intervalo del slaider  (+ = mas lento) -->
+              <img src="img/banner_img_01.jpg" class="d-block w-100" alt="Slide1">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="img/banner_img_02.jpg" class="d-block w-100" alt="Slide2">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="img/banner_img_03.jpg" class="d-block w-100" alt="Slide3">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div> 
     </div>
-
+  </div>
+</div>    
+    
+        
 
 
 
