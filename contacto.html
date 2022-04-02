@@ -35,10 +35,9 @@
     <div class="bg-light">
       <nav class="navbar navbar-expand-lg navbar-light bg-light  border-bottom p-2 " id="menu">
         <div class="container-fluid">
-          <a href="#" class="navbar-brand">
-            <!-- aqui va el logo superpuesto-->
-            <span class="text-primary fs-5 fw-bold"> F&M </span>
-          </a>
+          <!--arreglar logo XD-->
+          <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo de la pagina" width="80"></a>
+
           <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -76,42 +75,64 @@
       </nav>
     </div>
   </div>
+  <!--CONTACTANOS-->
   <!--
-    ======================================================================================================= -->
-  <!--SLIDER DE IMAGENES -->
-  <!--
-    ======================================================================================================= -->
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"
-    style="background-color: rgb(239,239,239);">
-    <div class="carousel-inner">
-
-      <div class="carousel-item active" data-bs-interval="3000">
-        <!-- ajustar tiempo del carrusel-->
-        <img src="img/banner_img_01.jpg" class="d-block w-100 imgsld" alt="slide1">
+======================================================================================================= -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-3">
       </div>
-
-      <div class="carousel-item" data-bs-interval="3000">
-        <img src="img/banner_img_02.jpg" class="d-block w-100 imgsld" alt="slide2">
+      <div class="col-lg-6" style="text-align: center;">
+        <h1> Contactanos </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum blanditiis et cupiditate maiores minus
+          laudantium nam sit consectetur, repellat suscipit impedit quia exercitationem doloremque corrupti sint iure
+          facere voluptates! Est.</p>
       </div>
-
-      <div class="carousel-item" data-bs-interval="3000">
-        <img src="img/banner_img_03.jpg" class="d-block w-100 imgsld" alt="slide3">
+      <div class="col-lg-3 ">
       </div>
     </div>
-
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
+<!--Formulario-->
+<div class="container py-5">
+  <div class="row py-5">
+      <form class="col-md-9 m-auto" method="post" role="form">
+          <div class="row">
+              <div class="form-group col-md-6 mb-3">
+                  <label for="inputname">Nombre</label>
+                  <input type="text" class="form-control mt-1" name="Nombre" placeholder="Nombre">
+              </div>
+              <div class="form-group col-md-6 mb-3">
+                  <label for="inputemail">Email</label>
+                  <input type="email" class="form-control mt-1" name="email" placeholder="Email">
+              </div>
+          </div>
+          <div class="mb-3">
+              <label for="inputsubject">Asunto</label>
+              <input type="text" class="form-control mt-1" name="Asunto" placeholder="Asunto">
+          </div>
+          <div class="mb-3">
+              <label for="inputmessage">Mensaje</label>
+              <textarea class="form-control mt-1" name="Mensaje" placeholder="Mensaje" rows="8"></textarea>
+          </div>
+          <div class="row">
+              <div class="col text-end mt-2">
+                  <a button type="submit" href="#" class="btn btn-success btn-lg px-3">Enviar</a button>
+              </div>
+          </div>
+      </form>
+  </div>
+</div>
+
+  
+
+  <!--FOOTER-->
+  <!--
+======================================================================================================= -->
   <!-- Footer -->
   <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
     <div class="container p-4">
-      <!-- Section: Redes Sociales -->
+      <!-- Section: Social media -->
       <section class="mb-4">
         <!-- Facebook -->
         <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
@@ -130,17 +151,23 @@
 
         <!-- Github -->
         <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
-
-
       </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Form -->
       <section class="">
         <form action="">
+          <!--Grid row-->
           <div class="row d-flex justify-content-center">
+            <!--Grid column-->
             <div class="col-auto">
               <p class="pt-2">
                 <strong>Suscribete Para recibir noticias</strong>
               </p>
             </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
             <div class="col-md-5 col-12">
               <!-- Email input -->
               <div class="form-outline form-white mb-4">
@@ -148,16 +175,23 @@
                 <label class="form-label" for="form5Example21">Correo Electronico</label>
               </div>
             </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
             <div class="col-auto">
-              <!-- boton suscribete -->
+              <!-- Submit button -->
               <button type="submit" class="btn btn-outline-light mb-4">
                 Suscribete
               </button>
             </div>
+            <!--Grid column-->
           </div>
+          <!--Grid row-->
         </form>
       </section>
+      <!-- Section: Form -->
 
+      <!-- Section: Text -->
       <section class="mb-4">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
@@ -165,9 +199,13 @@
           eum harum corrupti dicta, aliquam sequi voluptate quas.
         </p>
       </section>
+      <!-- Section: Text -->
+
       <!-- Section: Links -->
       <section class="">
+        <!--Grid row-->
         <div class="row">
+          <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
             <h5 class="text-uppercase">Links</h5>
 
@@ -186,6 +224,9 @@
               </li>
             </ul>
           </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
             <h5 class="text-uppercase">Links</h5>
 
@@ -204,6 +245,9 @@
               </li>
             </ul>
           </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
             <h5 class="text-uppercase">Links</h5>
 
@@ -222,6 +266,9 @@
               </li>
             </ul>
           </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
             <h5 class="text-uppercase">Links</h5>
 
@@ -240,9 +287,13 @@
               </li>
             </ul>
           </div>
+          <!--Grid column-->
         </div>
+        <!--Grid row-->
       </section>
+      <!-- Section: Links -->
     </div>
+    <!-- Grid container -->
 
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
@@ -251,6 +302,12 @@
     </div>
     <!-- Copyright -->
   </footer>
+  <!-- Footer -->
+
+
+
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
