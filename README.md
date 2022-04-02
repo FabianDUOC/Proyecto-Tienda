@@ -1,2 +1,2 @@
 # Proyecto-Tienda
-Proyecto Semestral
+Proyecto Semestral de Programación WEB
