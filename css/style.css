@@ -41,3 +41,7 @@ body{
     margin: auto;
     
 }
+
+p{
+    text-align: justify;
+}
