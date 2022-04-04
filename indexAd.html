@@ -34,111 +34,85 @@
     
     <div class="bg-light">
       <nav class="navbar navbar-expand-lg navbar-light bg-light  border-bottom p-2 " id="menu">
-        <div class="container-fluid">
-          <a href="#" class="navbar-brand">
-            <!-- aqui va el logo superpuesto-->
-          <img src="img/logo.png" alt="logo de la pagina" width="80">
-          </a>
-          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-       
-        <div id="MenuNavegacion" class="collapse navbar-collapse">
-          <ul class="navbar-nav ms-3">
-            <li class="nav-item">
-              <a class="nav-link" href="/Index.html">INICIO</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                ROPA
+          <div class="container-fluid">
+              <a href="#" class="navbar-brand">
+                  <!-- aqui va el logo superpuesto-->
+                  <img src="img/logo.png" alt="logo de la pagina" width="80">
               </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/Poleras.html">Poleras</a></li>
-                <li><a class="dropdown-item" href="/Pantalones.html">Pantalones</a></li>
-                <li><a class="dropdown-item" href="/Zapatillas.html">Zapatillas</a></li>
-                <li><a class="dropdown-item" href="/Polerones.html">Polerones</a></li>
-                <li><a class="dropdown-item" href="/Chaquetas.html">Chaquetas</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/Contacto.html">CONTACTO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/Carrito.html">CARRITO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/Cuenta.html">CUENTA</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav ms-3">
-            <li class="nav-item">
-              <a class="nav-link text-nowrap" href="/IniciarSesion.html">INICIAR SESIÓN</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-    
-    
-  <!--
-    ======================================================================================================= -->
-  <!--CUENTA USUARIO -->
-  <!--
-    ======================================================================================================= -->
-  
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-sm-12 mt-3 mb-3">
-          <h5>
-            Foto de Perfil
-          </h5>
-          <img src="img/Trabajador.png" class="img-thumbnail" alt="...">
-        </div>
-        <div class="col-md-6 col-sm-12 mt-3 mb-3">
-          <div class="row px-3">
-            <h5>
-              Nombre Completo
-            </h3>
-            <p>
-              Miguel Doggy
-            </p>
-            <h5>
-              Correo Electrónico
-            </h5>
-            <p>
-              mi.doggy@trabajo.cl
-            </p>
-            <h5>
-              Cargo
-            </h5>
-            <p>
-              Administrador
-            </p>
-            <h5>
-              Dirección
-            </h5>
-            <p>
-              Las Pepitas #339
-            </p>
-            <h5>
-              Número 
-              Telefónico
-            </h5>
-            <p>
-              +56 9 99884484
-            </p>
-            <h5>
-              Contraseña
-            </h5>
-            <p>********</p>
-            <a href="/EditarCuenta.html" class="btn btn-primary mb-3 gx-3">Editar Cuenta</a>
+              <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
           </div>
-        </div>
+
+          <div id="MenuNavegacion" class="collapse navbar-collapse">
+              <ul class="navbar-nav ms-3">
+                  <li class="nav-item">
+                      <a class="nav-link" href="/IndexAd.html">INICIO</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/AgregarProducto.html">AGREGAR</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          ROPA
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="/PolerasAd.html">Poleras</a></li>
+                          <li><a class="dropdown-item" href="/PantalonesAd.html">Pantalones</a></li>
+                          <li><a class="dropdown-item" href="/ZapatillasAd.html">Zapatillas</a></li>
+                          <li><a class="dropdown-item" href="/PoleronesAd.html">Polerones</a></li>
+                          <li><a class="dropdown-item" href="/ChaquetasAd.html">Chaquetas</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/MensajeAdmin.html">MENSAJES</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/CuentaAdmin.html">CUENTA</a>
+                  </li>
+              </ul>
+              <ul class="navbar-nav ms-3">
+                  <li class="nav-item">
+                      <a class="nav-link text-nowrap" href="/indexAd.html">CERRAR SESIÓN</a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+  </div>
+    
+  <!--
+    ======================================================================================================= -->
+  <!--SLIDER DE IMAGENES -->
+  <!--
+    ======================================================================================================= -->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"
+    style="background-color: rgb(239,239,239);">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active" data-bs-interval="3000">
+        <!-- ajustar tiempo del carrusel-->
+        <img src="img/Pantalon.png" class="d-block w-100 imgsld" alt="slide1">
       </div>
-  
+
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="img/Poleron.png" class="d-block w-100 imgsld" alt="slide2">
+      </div>
+
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="img/Zapatillas.png" class="d-block w-100 imgsld" alt="slide3">
+      </div>
     </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
 
   <!-- Footer -->
