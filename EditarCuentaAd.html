@@ -34,50 +34,50 @@
 
     <div class="bg-light">
         <nav class="navbar navbar-expand-lg navbar-light bg-light  border-bottom p-2 " id="menu">
-          <div class="container-fluid">
-            <img src="img/logo.png" alt="logo de la pagina" width="80">
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-         
-          <div id="MenuNavegacion" class="collapse navbar-collapse">
-            <ul class="navbar-nav ms-3">
-              <li class="nav-item">
-                <a class="nav-link" href="/Index.html">INICIO</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  ROPA
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/Poleras.html">Poleras</a></li>
-                  <li><a class="dropdown-item" href="/Pantalones.html">Pantalones</a></li>
-                  <li><a class="dropdown-item" href="/Zapatillas.html">Zapatillas</a></li>
-                  <li><a class="dropdown-item" href="/Polerones.html">Polerones</a></li>
-                  <li><a class="dropdown-item" href="/Chaquetas.html">Chaquetas</a></li>
+            <div class="container-fluid">
+                <img src="img/logo.png" alt="logo de la pagina" width="80">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div id="MenuNavegacion" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/IndexAd.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/AgregarProducto.html">AGREGAR</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            ROPA
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/PolerasAd.html">Poleras</a></li>
+                            <li><a class="dropdown-item" href="/PantalonesAd.html">Pantalones</a></li>
+                            <li><a class="dropdown-item" href="/ZapatillasAd.html">Zapatillas</a></li>
+                            <li><a class="dropdown-item" href="/PoleronesAd.html">Polerones</a></li>
+                            <li><a class="dropdown-item" href="/ChaquetasAd.html">Chaquetas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/MensajeAdmin.html">MENSAJES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/CuentaAdmin.html">CUENTA</a>
+                    </li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/Contacto.html">CONTACTO</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/Carrito.html">CARRITO</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/Cuenta.html">CUENTA</a>
-              </li>
-            </ul>
-            <ul class="navbar-nav ms-3">
-              <li class="nav-item">
-                <a class="nav-link text-nowrap" href="/IniciarSesion.html">INICIAR SESIÓN</a>
-              </li>
-            </ul>
-          </div>
+                <ul class="navbar-nav ms-3">
+                    <li class="nav-item">
+                        <a class="nav-link text-nowrap" href="/index.html">CERRAR SESIÓN</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-      </div>
-      
+    </div>
+
 
     <!--
     ======================================================================================================= -->
@@ -91,7 +91,7 @@
                 <h5>
                     Foto de Perfil
                 </h5>
-                <img src="img/Trabajadora.png" class="img-thumbnail" alt="...">
+                <img src="img/Trabajador.png" class="img-thumbnail" alt="...">
                 <!-- Botón elegir imagen -->
                 <input type="file" name="adjunto" accept=".jpg,.png" multiple />
             </div>
@@ -102,17 +102,17 @@
                         Nombre Completo
                         </h3>
                         <input type="text" class="form-control mt-1 mb-2" name="Nombre Completo"
-                            placeholder="Romina Tarragona">
+                            placeholder="Miguel Doggy">
                         <h5>
                             Correo Electrónico
                         </h5>
                         <input disabled type="text" class="form-control mt-1 mb-2" name="Ingresar correo electrónico"
-                            placeholder="ro.tarragona@usuario.cl">
+                            placeholder="mi.doggy@trabajo.cl">
                         <h5>
                             Dirección
                         </h5>
                         <input type="text" class="form-control mt-1 mb-2" name="Ingresar Direccion"
-                            placeholder="Las Salmueras #9190">
+                            placeholder="Las Pepitas #339">
                         <div class="row">
                             <div class="col">
                                 <h5>
@@ -144,9 +144,9 @@
                             Telefónico
                         </h5>
                         <input type="text" class="form-control mt-1 mb-2" name="Ingresar Número Telefónico"
-                            placeholder="+56 9 98984584">
-                        <a href="/Cuenta.html" class="btn btn-primary mb-2">Guardar Cambios</a>
-                        <a href="/CambiarClave.html" class="btn btn-danger">Cambiar Contraseña</a>
+                            placeholder="+56 9 99884484">
+                        <a href="/CuentaAdmin.html" class="btn btn-primary mb-2">Guardar Cambios</a>
+                        <a href="/CambiarClaveAd.html" class="btn btn-danger">Cambiar Contraseña</a>
                 </div>
             </div>
         </div>
@@ -158,15 +158,18 @@
     <footer class="bg-dark text-center text-white">
         <div class="container p-4">
             <!-- Section: Redes Sociales -->
-      <section class="mb-4">
-        <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://es-la.facebook.com/" target="_blank" role="button"><i class="fab fa-facebook-f"></i></a>
-        <!-- Twitter -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/?lang=es" target="_blank" role="button"><i class="fab fa-twitter"></i></a>
-        <!-- Instagram -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/?hl=es-la" target="_blank" role="button"><i class="fab fa-instagram"></i></a>
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://es-la.facebook.com/" target="_blank"
+                    role="button"><i class="fab fa-facebook-f"></i></a>
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/?lang=es" target="_blank"
+                    role="button"><i class="fab fa-twitter"></i></a>
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/?hl=es-la"
+                    target="_blank" role="button"><i class="fab fa-instagram"></i></a>
 
-      </section>
+            </section>
             <section class="">
                 <form action="">
                     <div class="row d-flex justify-content-center">

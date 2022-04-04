@@ -78,58 +78,45 @@
         </nav>
     </div>
 
-    <!--AGREGAR PRODUCTO-->
+    <!--RECUPERAR CONTRASEÑA-->
     <!--
 ======================================================================================================= -->
-
-    <div class="container">
+    <div class="container-fluid mt-5">
         <div class="row">
-            <div class="col-md-6 col-sm-12 mt-3 mb-3">
-                <input type="file" name="adjunto" accept=".jpg,.png" multiple />
+            <div class="col-lg-3">
             </div>
-            <div class="col-md-6 col-sm-12 mt-3 mb-3">
-                <div class="row px-3">
-                    <h5>
-                        Nombre del Producto
-                    </h5>
-                    <input type="text" class="form-control mt-1 mb-2" name="Nombre Producto"
-                        placeholder="Ingresar Nombre del Producto">
-                    <h5>
-                        Precio del Producto
-                    </h5>
-                    <input id="form1" min="1" name="Cantidad" value="1" type="number" class="form-control mt-1 mb-2"
-                        placeholder="Ingrese Precio del Producto" />
-                    <h5>
-                        Descripción Corta
-                    </h5>
-                    <input type="text" class="form-control mt-1 mb-2" name="Descripcion Corta"
-                        placeholder="Ingresar Descripción Corta">
-                    <h5>
-                        Descripción Detallada
-                    </h5>
-                    <textarea type="text" class="form-control mt-1 mb-2" name="Descripcion Detallada"
-                        placeholder="Ingresar Descripción Detallada"></textarea>
-                    <h5>Seleccionar Cantidad Disponible</h5>
-                    <input id="form1" min="1" name="Cantidad" value="1" type="number" class="form-control mt-1 mb-2"
-                        placeholder="Seleccionar Disponibilidad" />
-                    <h5>Seleccionar Categoría</h5>
-
-                    <select class="form-select" id="inputGroupSelect02">
-                        <option selected>Escoge La Categoria</option>
-                        <option value="1">Polera</option>
-                        <option value="2">Pantalones</option>
-                        <option value="3">Zapatillas</option>
-                        <option value="4">Polerones</option>
-                        <option value="5">Chaquetas</option>
-                    </select>
-
-                    <a href="" class="btn btn-primary px-3 mt-3">Agregar Producto</a>
-                </div>
+            <div class="col-lg-6" style="text-align: center;">
+                <h1> Cambiar Contraseña </h1>
+            </div>
+            <div class="col-lg-3 ">
             </div>
         </div>
-
     </div>
-
+    <!--Formulario-->
+    <div class="container py-3 mb-5">
+        <div class="row py-5">
+            <form class="col-md-9 m-auto" method="post" role="form">
+                <div class="mb-3">
+                    <label for="inputsubject">Contraseña Actual</label>
+                    <input type="password" class="form-control mt-1 mb-2" name="ClaveActual"
+                        placeholder="Ingresar Contraseña Actual">
+                </div>
+                <div class="mb-3">
+                    <label for="inputsubject">Contraseña Nueva</label>
+                    <input type="password" class="form-control mt-1 mb-2" name="ClaveNueva1"
+                        placeholder="Ingresar Contraseña Nueva">
+                </div>
+                <div class="mb-3">
+                    <label for="inputsubject">Repetir Contraseña Nueva</label>
+                    <input type="password" class="form-control mt-1 mb-2" name="ClaveNueva2"
+                        placeholder="Repetir Contraseña Nueva">
+                </div>
+                <div class="d-grid gap-3">
+                    <a button type="button" href="/CuentaAdmin.html" class="btn btn-primary ">Guardar</a button>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-dark text-center text-white">
