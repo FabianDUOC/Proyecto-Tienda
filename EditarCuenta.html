@@ -34,50 +34,50 @@
 
     <div class="bg-light">
         <nav class="navbar navbar-expand-lg navbar-light bg-light  border-bottom p-2 " id="menu">
-          <div class="container-fluid">
-            <img src="img/logo.png" alt="logo de la pagina" width="80">
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-         
-          <div id="MenuNavegacion" class="collapse navbar-collapse">
-            <ul class="navbar-nav ms-3">
-              <li class="nav-item">
-                <a class="nav-link" href="/Index.html">INICIO</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  ROPA
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/Poleras.html">Poleras</a></li>
-                  <li><a class="dropdown-item" href="/Pantalones.html">Pantalones</a></li>
-                  <li><a class="dropdown-item" href="/Zapatillas.html">Zapatillas</a></li>
-                  <li><a class="dropdown-item" href="/Polerones.html">Polerones</a></li>
-                  <li><a class="dropdown-item" href="/Chaquetas.html">Chaquetas</a></li>
+            <div class="container-fluid">
+                <img src="img/logo.png" alt="logo de la pagina" width="80">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div id="MenuNavegacion" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            ROPA
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/Poleras.html">Poleras</a></li>
+                            <li><a class="dropdown-item" href="/Pantalones.html">Pantalones</a></li>
+                            <li><a class="dropdown-item" href="/Zapatillas.html">Zapatillas</a></li>
+                            <li><a class="dropdown-item" href="/Polerones.html">Polerones</a></li>
+                            <li><a class="dropdown-item" href="/Chaquetas.html">Chaquetas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Contacto.html">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Carrito.html">CARRITO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Cuenta.html">CUENTA</a>
+                    </li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/Contacto.html">CONTACTO</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/Carrito.html">CARRITO</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/Cuenta.html">CUENTA</a>
-              </li>
-            </ul>
-            <ul class="navbar-nav ms-3">
-              <li class="nav-item">
-                <a class="nav-link text-nowrap" href="/IniciarSesion.html">INICIAR SESIÓN</a>
-              </li>
-            </ul>
-          </div>
+                <ul class="navbar-nav ms-3">
+                    <li class="nav-item">
+                        <a class="nav-link text-nowrap" href="/IniciarSesion.html">INICIAR SESIÓN</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-      </div>
-      
+    </div>
+
 
     <!--
     ======================================================================================================= -->
@@ -86,71 +86,74 @@
     ======================================================================================================= -->
 
     <div class="container">
+        <form method="post" action="" id="editUsuario">
         <div class="row">
-            <div class="col-md-6 col-sm-12 mt-3 mb-3">
-                <h5>
-                    Foto de Perfil
-                </h5>
-                <img src="img/Trabajadora.png" class="img-thumbnail" alt="...">
-                <!-- Botón elegir imagen -->
-                <input type="file" name="adjunto" accept=".jpg,.png" multiple />
-            </div>
-            <!-- Formulario -->
-            <div class="col-md-6 col-sm-12 mt-3 mb-3">
-                <div class="row px-3">
-                    <h5>
-                        Nombre Completo
-                        </h3>
-                        <input type="text" class="form-control mt-1 mb-2" name="Nombre Completo"
-                            placeholder="Romina Tarragona">
-                        <h5>
-                            Correo Electrónico
-                        </h5>
-                        <input disabled type="text" class="form-control mt-1 mb-2" name="Ingresar correo electrónico"
-                            placeholder="ro.tarragona@usuario.cl">
-                        <h5>
-                            Dirección
-                        </h5>
-                        <input type="text" class="form-control mt-1 mb-2" name="Ingresar Direccion"
-                            placeholder="Las Salmueras #9190">
-                        <div class="row">
-                            <div class="col-sm-12 col-lg-6">
-                                <h5>
-                                    Región
-                                </h5>
-                                <div class="input-group mb-3">
-                                    <select class="form-select" id="inputGroupSelect02">
-                                        <option selected>Escoge tu Región</option>
-                                        <option value="1">Región Metropolitana</option>
-                                        <option value="2">Valparaíso</option>
-                                        <option value="3">Coquimbo</option>
+            
+                <div class="col-md-6 col-sm-12 mt-3 mb-3">
+                    <label>
+                        Foto de Perfil
+                    </label>
+                        <img src="img/Trabajadora.png" class="img-thumbnail" alt="...">
+                        <!-- Botón elegir imagen -->
+                        <input type="file" name="Foto" id="Foto" accept=".jpg,.png" required />
+                </div>
+                <!-- Formulario -->
+                <div class="col-md-6 col-sm-12 mt-3 mb-3">
+                    <div class="row px-3">
+                        <label for="nombreCompleto">
+                            Nombre Completo
+                        </label>
+                            <input type="text" class="form-control mt-1 mb-2" name="nombreCompleto" id="nombreCompleto"
+                                placeholder="Romina Tarragona" required>
+                            <label for="email">
+                                Correo Electrónico
+                            </label>
+                            <input disabled type="text" class="form-control mt-1 mb-2"
+                                name="email" id="email" placeholder="ro.tarragona@usuario.cl">
+                            <label for="direccion">
+                                Dirección
+                            </label>
+                            <input type="text" class="form-control mt-1 mb-2" name="direccion" id="direccion"
+                                placeholder="Las Salmueras #9190" required>
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-6">
+                                    <label for="region">
+                                        Región
+                                    </label>
+                                    <div class="input-group mb-3">
+                                        <select class="form-select" id="region" name="region" required>
+                                            <option selected>Escoge tu Región</option>
+                                            <option value="1">Región Metropolitana</option>
+                                            <option value="2">Valparaíso</option>
+                                            <option value="3">Coquimbo</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-6">
+                                    <label for="comuna">
+                                        Comuna
+                                    </label>
+                                    <select class="form-select mb-3" id="comuna" name="comuna" required>
+                                        <option selected>Escoge tu Comuna</option>
+                                        <option value="1">Recoleta</option>
+                                        <option value="2">Huechuraba</option>
+                                        <option value="3">Quilicura</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-lg-6">
-                                <h5>
-                                    Comuna
-                                </h5>
-                                <select class="form-select mb-3" id="inputGroupSelect02">
-                                    <option selected>Escoge tu Comuna</option>
-                                    <option value="1">Recoleta</option>
-                                    <option value="2">Huechuraba</option>
-                                    <option value="3">Quilicura</option>
-                                </select>
-                            </div>
-                        </div>
-                        <h5>
-                            Número
-                            Telefónico
-                        </h5>
-                        <input type="text" class="form-control mt-1 mb-2" name="Ingresar Número Telefónico"
-                            placeholder="+56 9 98984584">
-                        <a href="/Cuenta.html" class="btn btn-primary mb-2">Guardar Cambios</a>
-                        <a href="/CambiarClave.html" class="btn btn-danger">Cambiar Contraseña</a>
+                            <label>
+                                Número
+                                Telefónico
+                            </label>
+                            <input type="number" class="form-control mt-1 mb-2" name="telefono" id="telefono"
+                                placeholder="+56 9 98984584" required>
+                            <button type="submit" href="/Cuenta.html" class="btn btn-primary mb-2">Guardar Cambios</button>
+                            <a href="/CambiarClave.html" class="btn btn-danger">Cambiar Contraseña</a>
+                    </div>
                 </div>
-            </div>
+            
         </div>
-
+</form>
     </div>
 
 
@@ -158,15 +161,18 @@
     <footer class="bg-dark text-center text-white">
         <div class="container p-4">
             <!-- Section: Redes Sociales -->
-      <section class="mb-4">
-        <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://es-la.facebook.com/" target="_blank" role="button"><i class="fab fa-facebook-f"></i></a>
-        <!-- Twitter -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/?lang=es" target="_blank" role="button"><i class="fab fa-twitter"></i></a>
-        <!-- Instagram -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/?hl=es-la" target="_blank" role="button"><i class="fab fa-instagram"></i></a>
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://es-la.facebook.com/" target="_blank"
+                    role="button"><i class="fab fa-facebook-f"></i></a>
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/?lang=es" target="_blank"
+                    role="button"><i class="fab fa-twitter"></i></a>
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/?hl=es-la"
+                    target="_blank" role="button"><i class="fab fa-instagram"></i></a>
 
-      </section>
+            </section>
             <section class="">
                 <form action="">
                     <div class="row d-flex justify-content-center">
@@ -178,8 +184,8 @@
                         <div class="col-md-5 col-12">
                             <!-- Email input -->
                             <div class="form-outline form-white mb-4">
-                                <input type="email" id="form5Example21" class="form-control"
-                                    placeholder="Correo Electrónico" />
+                                <input type="email" id="emailF" name="emailf" class="form-control"
+                                    placeholder="Correo Electrónico" required />
                             </div>
                         </div>
                         <div class="col-auto">

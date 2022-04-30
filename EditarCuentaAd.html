@@ -86,71 +86,72 @@
     ======================================================================================================= -->
 
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-12 mt-3 mb-3">
-                <h5>
-                    Foto de Perfil
-                </h5>
-                <img src="img/Trabajador.png" class="img-thumbnail" alt="...">
-                <!-- Botón elegir imagen -->
-                <input type="file" name="adjunto" accept=".jpg,.png" multiple />
-            </div>
-            <!-- Formulario -->
-            <div class="col-md-6 col-sm-12 mt-3 mb-3">
-                <div class="row px-3">
-                    <h5>
-                        Nombre Completo
-                        </h3>
-                        <input type="text" class="form-control mt-1 mb-2" name="Nombre Completo"
-                            placeholder="Miguel Doggy">
-                        <h5>
+        <form method="post" action="" id="editAdmin">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 mt-3 mb-3">
+                    <label>
+                        Foto de Perfil
+                    </label>
+                    <img src="img/Trabajador.png" class="img-thumbnail" alt="...">
+                    <!-- Botón elegir imagen -->
+                    <input type="file" name="Foto" id="Foto" accept=".jpg,.png" required />
+                </div>
+                <!-- Formulario -->
+                <div class="col-md-6 col-sm-12 mt-3 mb-3">
+                    <div class="row px-3">
+                        <label for="nombreCompleto">
+                            Nombre Completo
+                        </label>
+                        <input type="text" class="form-control mt-1 mb-2" name="nombreCompleto" id="nombreCompleto"
+                            placeholder="Miguel Doggy" required>
+                        <label for="email">
                             Correo Electrónico
-                        </h5>
-                        <input disabled type="text" class="form-control mt-1 mb-2" name="Ingresar correo electrónico"
-                            placeholder="mi.doggy@trabajo.cl">
-                        <h5>
+                        </label>
+                        <input disabled type="text" class="form-control mt-1 mb-2" name="email" id="email"
+                            placeholder="mi.doggy@trabajo.cl" required>
+                        <label for="direccion">
                             Dirección
-                        </h5>
-                        <input type="text" class="form-control mt-1 mb-2" name="Ingresar Direccion"
-                            placeholder="Las Pepitas #339">
-                            <div class="row">
-                                <div class="col-sm-12 col-lg-6">
-                                    <h5>
-                                        Región
-                                    </h5>
-                                    <div class="input-group mb-3">
-                                        <select class="form-select" id="inputGroupSelect02">
-                                            <option selected>Escoge tu Región</option>
-                                            <option value="1">Región Metropolitana</option>
-                                            <option value="2">Valparaíso</option>
-                                            <option value="3">Coquimbo</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-lg-6">
-                                    <h5>
-                                        Comuna
-                                    </h5>
-                                    <select class="form-select mb-3" id="inputGroupSelect02">
-                                        <option selected>Escoge tu Comuna</option>
-                                        <option value="1">Recoleta</option>
-                                        <option value="2">Huechuraba</option>
-                                        <option value="3">Quilicura</option>
+                        </label>
+                        <input type="text" class="form-control mt-1 mb-2" name="direccion" id="direccion"
+                            placeholder="Las Pepitas #339" required>
+                        <div class="row">
+                            <div class="col-sm-12 col-lg-6">
+                                <label for="region">
+                                    Región
+                                </label>
+                                <div class="input-group mb-3">
+                                    <select class="form-select" id="region" name="region" required>
+                                        <option selected>Escoge tu Región</option>
+                                        <option value="1">Región Metropolitana</option>
+                                        <option value="2">Valparaíso</option>
+                                        <option value="3">Coquimbo</option>
                                     </select>
                                 </div>
                             </div>
-                        <h5>
+                            <div class="col-sm-12 col-lg-6">
+                                <label for="comuna">
+                                    Comuna
+                                </label>
+                                <select class="form-select mb-3" id="comuna" name="comuna" required>
+                                    <option selected>Escoge tu Comuna</option>
+                                    <option value="1">Recoleta</option>
+                                    <option value="2">Huechuraba</option>
+                                    <option value="3">Quilicura</option>
+                                </select>
+                            </div>
+                        </div>
+                        <label>
                             Número
                             Telefónico
-                        </h5>
-                        <input type="text" class="form-control mt-1 mb-2" name="Ingresar Número Telefónico"
-                            placeholder="+56 9 99884484">
-                        <a href="/CuentaAdmin.html" class="btn btn-primary mb-2">Guardar Cambios</a>
+                        </label>
+                        <input type="number" class="form-control mt-1 mb-2" name="telefono" id="telefono"
+                            placeholder="+56 9 99884484" required>
+                        <button type="submit" href="/CuentaAdmin.html" class="btn btn-primary mb-2">Guardar Cambios</button>
                         <a href="/CambiarClaveAd.html" class="btn btn-danger">Cambiar Contraseña</a>
+                    </div>
                 </div>
             </div>
-        </div>
-
+        </form>
     </div>
 
 
@@ -181,8 +182,8 @@
                         <div class="col-md-5 col-12">
                             <!-- Email input -->
                             <div class="form-outline form-white mb-4">
-                                <input type="email" id="form5Example21" class="form-control"
-                                    placeholder="Correo Electrónico" />
+                                <input type="email" id="emailF" name="emailf" class="form-control"
+                                    placeholder="Correo Electrónico" required />
                             </div>
                         </div>
                         <div class="col-auto">

@@ -32,55 +32,54 @@
   <!--
     ======================================================================================================= -->
 
-    <div class="bg-light">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light  border-bottom p-2 " id="menu">
-        <div class="container-fluid">
-          <img src="img/logo.png" alt="logo de la pagina" width="80">
-          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-       
-        <div id="MenuNavegacion" class="collapse navbar-collapse">
-          <ul class="navbar-nav ms-3">
-            <li class="nav-item">
-              <a class="nav-link" href="/Index.html">INICIO</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                ROPA
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/Poleras.html">Poleras</a></li>
-                <li><a class="dropdown-item" href="/Pantalones.html">Pantalones</a></li>
-                <li><a class="dropdown-item" href="/Zapatillas.html">Zapatillas</a></li>
-                <li><a class="dropdown-item" href="/Polerones.html">Polerones</a></li>
-                <li><a class="dropdown-item" href="/Chaquetas.html">Chaquetas</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/Contacto.html">CONTACTO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/Carrito.html">CARRITO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/Cuenta.html">CUENTA</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav ms-3">
-            <li class="nav-item">
-              <a class="nav-link text-nowrap" href="/IniciarSesion.html">INICIAR SESIÓN</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-    
+  <div class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light  border-bottom p-2 " id="menu">
+      <div class="container-fluid">
+        <img src="img/logo.png" alt="logo de la pagina" width="80">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div id="MenuNavegacion" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-3">
+          <li class="nav-item">
+            <a class="nav-link" href="/Index.html">INICIO</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              ROPA
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/Poleras.html">Poleras</a></li>
+              <li><a class="dropdown-item" href="/Pantalones.html">Pantalones</a></li>
+              <li><a class="dropdown-item" href="/Zapatillas.html">Zapatillas</a></li>
+              <li><a class="dropdown-item" href="/Polerones.html">Polerones</a></li>
+              <li><a class="dropdown-item" href="/Chaquetas.html">Chaquetas</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Contacto.html">CONTACTO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Carrito.html">CARRITO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Cuenta.html">CUENTA</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-3">
+          <li class="nav-item">
+            <a class="nav-link text-nowrap" href="/IniciarSesion.html">INICIAR SESIÓN</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
   <!--
     ======================================================================================================= -->
-  <!--SLIDER DE IMAGENES -->
+  <!--REGISTRO DE USUARIO -->
   <!--
     ======================================================================================================= -->
 
@@ -91,28 +90,29 @@
       </div>
       <div class="col-lg-6 col-sm-10 mt-3 mb-3">
         <div class="row">
-          <h5>
-            Nombre Completo
-            </h5>
-            <input type="text" class="form-control mt-1 mb-2" name="Nombre Completo"
-              placeholder="Ingresar Nombre Completo">
-            <h5>
+          <form action="">
+            <label for="NombreCompleto">
+              Nombre Completo
+            </label>
+            <input type="text" class="form-control mt-1 mb-2" name="NombreCompleto" id="NombreCompleto"
+              placeholder="Ingresar Nombre Completo" required>
+            <label for="correoRegistro">
               Correo Electrónico
-            </h5>
-            <input type="text" class="form-control mt-1 mb-2" name="Ingresar correo electrónico"
-              placeholder="Ingresar correo electrónico">
-            <h5>
+            </label>
+            <input type="email" class="form-control mt-1 mb-2" name="correoRegistro" id="correoRegistro"
+              placeholder="Ingresar correo electrónico" required>
+            <label for="Direccion">
               Direccion
-            </h5>
-            <input type="text" class="form-control mt-1 mb-2" name="Ingresar Direccion"
-              placeholder="Ingresar Direccion">
+            </label>
+            <input type="text" class="form-control mt-1 mb-2" name="Direccion" id="Direccion"
+              placeholder="Ingresar Direccion" required>
             <div class="row">
               <div class="col-sm-12 col-md-6">
-                <h5>
-                  Región
-                </h5>
+                <label for="region">Región</label>
                 <div class="input-group mb-3">
-                  <select class="form-select" id="inputGroupSelect02">
+
+
+                  <select class="form-select" id="region" name="region" required>
                     <option selected>Escoge tu Región</option>
                     <option value="1">Región Metropolitana</option>
                     <option value="2">Valparaíso</option>
@@ -121,10 +121,10 @@
                 </div>
               </div>
               <div class="col-sm-12 col-md-6">
-                <h5>
+                <label for="comuna">
                   Comuna
-                </h5>
-                <select class="form-select" id="inputGroupSelect02">
+                </label>
+                <select class="form-select" id="comuna" name="comuna" required>
                   <option selected>Escoge tu Comuna</option>
                   <option value="1">Recoleta</option>
                   <option value="2">Huechuraba</option>
@@ -132,21 +132,22 @@
                 </select>
               </div>
             </div>
-            <h5>
+            <label for="telefono">
               Número
               Telefónico
-            </h5>
-            <input type="text" class="form-control mt-1 mb-2" name="Ingresar Número Telefónico"
-              placeholder="Ingresar Número Telefónico">
-            <h5>
+            </label>
+            <input type="number" class="form-control mt-1 mb-2" name="telefono" id="telefono"
+              placeholder="Ingresar Número Telefónico" required>
+            <label for="clave1">
               Contraseña
-            </h5>
-            <input type="password" class="form-control mt-1 mb-2" name="Clave1" placeholder="Ingresar contraseña">
-            <h5>
+            </label>
+            <input type="password" class="form-control mt-1 mb-2" name="clave1" id="clave1" placeholder="Ingresar contraseña" required>
+            <label for="clave2">
               Repetir contraseña
-            </h5>
-            <input type="password" class="form-control mt-1 mb-2" name="Clave2" placeholder="Retepir contraseña">
-            <a href="/IniciarSesion.html" class="btn btn-primary">Crear Cuenta</a>
+            </label>
+            <input type="password" class="form-control mt-1 mb-2" name="clave2" id="clave2" placeholder="Repetir contraseña" required>
+            <button type="submit" href="/IniciarSesion.html" class="btn btn-primary">Crear Cuenta</button>
+          </form>
         </div>
       </div>
       <div class="col-lg-3 col-sm-1">
@@ -162,11 +163,14 @@
       <!-- Section: Redes Sociales -->
       <section class="mb-4">
         <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://es-la.facebook.com/" target="_blank" role="button"><i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://es-la.facebook.com/" target="_blank"
+          role="button"><i class="fab fa-facebook-f"></i></a>
         <!-- Twitter -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/?lang=es" target="_blank" role="button"><i class="fab fa-twitter"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/?lang=es" target="_blank"
+          role="button"><i class="fab fa-twitter"></i></a>
         <!-- Instagram -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/?hl=es-la" target="_blank" role="button"><i class="fab fa-instagram"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/?hl=es-la" target="_blank"
+          role="button"><i class="fab fa-instagram"></i></a>
 
       </section>
       <section class="">
@@ -180,7 +184,7 @@
             <div class="col-md-5 col-12">
               <!-- Email input -->
               <div class="form-outline form-white mb-4">
-                <input type="email" id="form5Example21" class="form-control" placeholder="Correo Electrónico" />
+                <input type="email" id="emailF" name="emailf" class="form-control" placeholder="Correo Electrónico" required/>
               </div>
             </div>
             <div class="col-auto">

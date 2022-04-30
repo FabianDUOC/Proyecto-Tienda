@@ -78,7 +78,7 @@
       </nav>
   </div>
     
-  <!--CONTACTANOS-->
+  <!--Mensaje Admin-->
   <!--
 ======================================================================================================= -->
   <div class="container-fluid">
@@ -98,19 +98,19 @@
 <!--Formulario-->
 <div class="container py-5">
   <div class="row py-5">
-      <form class="col-md-9 m-auto" method="post" role="form">
+      <form class="col-md-9 m-auto" method="post" action="">
           
           <div class="mb-3">
-              <label for="inputsubject">Asunto</label>
-              <input type="text" class="form-control mt-1" name="Asunto" placeholder="Asunto">
+              <label for="Asunto">Asunto</label>
+              <input type="text" class="form-control mt-1" name="Asunto" id="Asunto" placeholder="Asunto" required>
           </div>
           <div class="mb-3">
-              <label for="inputmessage">Mensaje</label>
-              <textarea class="form-control mt-1" name="Mensaje" placeholder="Mensaje" rows="8"></textarea>
+              <label for="Mensaje">Mensaje</label>
+              <textarea class="form-control mt-1" name="Mensaje" placeholder="Mensaje" rows="8" required></textarea>
           </div>
           <div class="row">
               <div class="col text-end mt-2">
-                  <a button type="submit" href="#" class="btn btn-success btn-lg px-3">Enviar a Usuarios</a button>
+                  <button type="submit" href="#" class="btn btn-success btn-lg px-3">Enviar a Usuarios</button>
               </div>
           </div>
       </form>
@@ -143,7 +143,7 @@
             <div class="col-md-5 col-12">
               <!-- Email input -->
               <div class="form-outline form-white mb-4">
-                <input type="email" id="form5Example21" class="form-control" placeholder="Correo Electrónico" />
+                <input type="email" id="emailF" name="emailf" class="form-control" placeholder="Correo Electrónico" required/>
               </div>
             </div>
             <div class="col-auto">

@@ -95,21 +95,21 @@
 <!--Formulario-->
 <div class="container py-3 mb-5">
   <div class="row py-5">
-    <form class="col-md-9 m-auto" method="post" role="form">
-      <div class="mb-3">
-        <label for="inputsubject">Correo Electrónico</label>
-        <input type="text" class="form-control mt-1" name="Ingresar correo electrónico" placeholder="Ingresar correo electrónico">
+    <form class="col-md-9 m-auto" action="" method="post" role="form">
+      <div class="mb-3 form-group">
+        <label for="emailinicio">Correo Electrónico</label>
+        <input type="email" class="form-control  mt-1" required name="emailinicio" id="emailinicio" placeholder="Ingresar Correo Electrónico">
       </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1">Contraseña</label>
-        <input type="password" class="form-control mt-1" name="Clave" placeholder="Ingresar contraseña">
+      <div class="mb-3 form-group">
+        <label for="claveinicio">Contraseña</label>
+        <input type="password" class="form-control mt-1" required name="claveinicio" id="claveinicio" placeholder="Ingresar Contraseña">
       </div>
       <div class="form-check">
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
         <label class="form-check-label" for="exampleCheck1">Recordar mis datos</label>
       </div>
       <div class="d-grid gap-3">
-        <a button type="button" href="#" class="btn btn-primary ">Iniciar Sesión</a button>
+        <button type="submit" href="" class="btn btn-primary ">Iniciar Sesión</button>
         <a button type="button" href="/RecuperarClave.html" class="btn btn-danger ">Olvide mi contraseña</a button>
       </div>
     </form>
@@ -144,7 +144,7 @@
             <div class="col-md-5 col-12">
               <!-- Email input -->
               <div class="form-outline form-white mb-4">
-                <input type="email" id="form5Example21" class="form-control" placeholder="Correo Electrónico" />
+                <input type="email" id="emailF" name="emailf" class="form-control" placeholder="Correo Electrónico" required/>
               </div>
             </div>
             <div class="col-auto">

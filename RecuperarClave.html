@@ -31,98 +31,102 @@
   <!-- BARRA NAVEGADORA -->
   <!--
     ======================================================================================================= -->
-    
-    <div class="bg-light">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light  border-bottom p-2 " id="menu">
-        <div class="container-fluid">
-          <img src="img/logo.png" alt="logo de la pagina" width="80">
-          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-       
-        <div id="MenuNavegacion" class="collapse navbar-collapse">
-          <ul class="navbar-nav ms-3">
-            <li class="nav-item">
-              <a class="nav-link" href="/Index.html">INICIO</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                ROPA
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/Poleras.html">Poleras</a></li>
-                <li><a class="dropdown-item" href="/Pantalones.html">Pantalones</a></li>
-                <li><a class="dropdown-item" href="/Zapatillas.html">Zapatillas</a></li>
-                <li><a class="dropdown-item" href="/Polerones.html">Polerones</a></li>
-                <li><a class="dropdown-item" href="/Chaquetas.html">Chaquetas</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/Contacto.html">CONTACTO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/Carrito.html">CARRITO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/Cuenta.html">CUENTA</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav ms-3">
-            <li class="nav-item">
-              <a class="nav-link text-nowrap" href="/IniciarSesion.html">INICIAR SESIÓN</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-    
+
+  <div class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light  border-bottom p-2 " id="menu">
+      <div class="container-fluid">
+        <img src="img/logo.png" alt="logo de la pagina" width="80">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div id="MenuNavegacion" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-3">
+          <li class="nav-item">
+            <a class="nav-link" href="/Index.html">INICIO</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              ROPA
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/Poleras.html">Poleras</a></li>
+              <li><a class="dropdown-item" href="/Pantalones.html">Pantalones</a></li>
+              <li><a class="dropdown-item" href="/Zapatillas.html">Zapatillas</a></li>
+              <li><a class="dropdown-item" href="/Polerones.html">Polerones</a></li>
+              <li><a class="dropdown-item" href="/Chaquetas.html">Chaquetas</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Contacto.html">CONTACTO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Carrito.html">CARRITO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Cuenta.html">CUENTA</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-3">
+          <li class="nav-item">
+            <a class="nav-link text-nowrap" href="/IniciarSesion.html">INICIAR SESIÓN</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
 
   <!--RECUPERAR CONTRASEÑA-->
   <!--
 ======================================================================================================= -->
-<div class="container-fluid mt-5">
-  <div class="row">
-    <div class="col-lg-3">
-    </div>
-    <div class="col-lg-6" style="text-align: center;">
-      <h1> Recuperar Contraseña </h1>
-    </div>
-    <div class="col-lg-3 ">
+  <div class="container-fluid mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+      </div>
+      <div class="col-lg-6" style="text-align: center;">
+        <h1> Recuperar Contraseña </h1>
+      </div>
+      <div class="col-lg-3 ">
+      </div>
     </div>
   </div>
-</div>
-<!--Formulario-->
-<div class="container py-3 mb-5">
-  <div class="row py-5">
-    <form class="col-md-9 m-auto" method="post" role="form">
-      <div class="mb-3">
-        <label for="inputsubject">Correo Electrónico</label>
-        <input type="text" class="form-control mt-1" name="Correo1" placeholder="Ingresar correo electrónico">
-      </div>
-      <div class="mb-3">
-        <label for="inputsubject">Repetir Correo Electrónico</label>
-        <input type="text" class="form-control mt-1" name="Corre2" placeholder="Repetir Correo Electrónico">
-      </div>
-      <div class="d-grid gap-3">
-        <a button type="button" href="#" class="btn btn-primary ">Enviar correo de recuperación</a button>
-      </div>
-    </form>
+  <!--Formulario-->
+  <div class="container py-3 mb-5">
+    <div class="row py-5">
+      <form class="col-md-9 m-auto" method="post" role="form" action="">
+        <div class="mb-3">
+          <label for="inputsubject">Correo Electrónico</label>
+          <input type="email" required class="form-control mt-1" name="Correo1" id="Correo1"
+            placeholder="Ingresar correo electrónico">
+        </div>
+        <div class="mb-3">
+          <label for="inputsubject">Repetir Correo Electrónico</label>
+          <input type="email" required class="form-control mt-1" name="Correo2" id="Correo2"
+            placeholder="Repetir Correo Electrónico">
+        </div>
+        <div class="d-grid gap-3">
+          <button type="submit" href="#" class="btn btn-primary ">Enviar correo de recuperación</button>
+        </div>
+      </form>
     </div>
-</div>
+  </div>
 
-    <!-- Footer -->
+  <!-- Footer -->
   <footer class="bg-dark text-center text-white">
     <div class="container p-4">
       <!-- Section: Redes Sociales -->
       <section class="mb-4">
         <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://es-la.facebook.com/" target="_blank" role="button"><i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://es-la.facebook.com/" target="_blank"
+          role="button"><i class="fab fa-facebook-f"></i></a>
         <!-- Twitter -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/?lang=es" target="_blank" role="button"><i class="fab fa-twitter"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/?lang=es" target="_blank"
+          role="button"><i class="fab fa-twitter"></i></a>
         <!-- Instagram -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/?hl=es-la" target="_blank" role="button"><i class="fab fa-instagram"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/?hl=es-la" target="_blank"
+          role="button"><i class="fab fa-instagram"></i></a>
 
       </section>
       <section class="">
@@ -136,7 +140,8 @@
             <div class="col-md-5 col-12">
               <!-- Email input -->
               <div class="form-outline form-white mb-4">
-                <input type="email" id="form5Example21" class="form-control" placeholder="Correo Electrónico" />
+                <input type="email" id="emailF" name="emailf" class="form-control" placeholder="Correo Electrónico"
+                  required />
               </div>
             </div>
             <div class="col-auto">
