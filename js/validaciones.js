@@ -31,6 +31,7 @@ $(document).ready(function(){
     // FORMULARIO CAMBIAR CONTRASEÑA
     $("#cambiarClave").submit(function(e){
         e.preventDefault();
+        var clave = $("#claveActual").val();
         var claveNu1 = $("#claveNueva1").val();
         var claveNu2 = $("#claveNueva2").val();
 
@@ -38,14 +39,18 @@ $(document).ready(function(){
         let entrar = false;
 
         if(claveNu1.trim().length < 6){
-            msj+="La clave nueva de tener al menos 6 caracteres <br>";
+            msj+="La contraseña nueva de tener al menos 6 caracteres <br>";
+            entrar = true;
+        }
+        if(claveNu1==clave){
+            msj+="Las contraseñas nuevas deben ser distinta a la contraseña antigua <br>"
+            entrar = true;
+        }
+        if(claveNu1!=claveNu2){
+            msj+="Las contraseñas nuevas deben ser iguales <br>"
             entrar = true;
         }
 
-        if(claveNu1!=claveNu2){
-            msj+="Las claves nuevas deben ser iguales <br>"
-            entrar = true;
-        }
 
         if(entrar){
             $("#mensajes").html(msj);
@@ -77,7 +82,7 @@ $(document).ready(function(){
         else{
             $("#mensajes1").html("");
             $("#mensajes2").css({'color':'blue'});
-            $("#mensajes2").html("Mensaje enviado exitosamenta");
+            $("#mensajes2").html("Mensaje enviado exitosamente");
             $("#formContanto")[0].reset();
         }
     })
@@ -217,6 +222,8 @@ $(document).ready(function(){
     // FORMULARIO MENSAJES ADMIN
     $("#formMensaje").submit(function(e){
         e.preventDefault();
+        $("#mensajes").css({'color':'blue'});
+        $("#mensajes").html("Mensaje Enviado Satisfactoriamente")
     })
 
 
