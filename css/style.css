@@ -50,3 +50,8 @@ p{
     height: 500px;
     width: 100%;
 }
+
+.msjAlerta{
+    text-align: center;
+    color: red;
+}

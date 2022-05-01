@@ -11,7 +11,7 @@
   <script src="https://kit.fontawesome.com/35863c2e47.js" crossorigin="anonymous"></script>
   <link rel="icon" href="img/logo.png">
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -82,52 +82,53 @@
 ======================================================================================================= -->
 
   <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-sm-12 mt-3 mb-3">
-        <img src="img/Polera.png" class="img-thumbnail" alt="...">
-        <input type="file" name="adjunto" accept=".jpg,.png" multiple />
-      </div>
-      <div class="col-md-6 col-sm-12 mt-3 mb-3">
-        <div class="row px-3">
-          <h5>
-            Nombre del Producto
-          </h5>
-          <input type="text" class="form-control mt-1 mb-2" name="Nombre Producto"
-            placeholder="Ingresar Nombre del Producto">
-          <h5>
-            Precio del Producto
-          </h5>
-          <input id="form1" min="1" name="Cantidad" value="1" type="number" class="form-control mt-1 mb-2"
-            placeholder="Ingrese Precio del Producto" />
-          <h5>
-            Descripción Corta
-          </h5>
-          <input type="text" class="form-control mt-1 mb-2" name="Descripcion Corta"
-            placeholder="Ingresar Descripción Corta">
-          <h5>
-            Descripción Detallada
-          </h5>
-          <textarea type="text" class="form-control mt-1 mb-2" name="Descripcion Detallada"
-            placeholder="Ingresar Descripción Detallada"></textarea>
-          <h5>Seleccionar Cantidad Disponible</h5>
-          <input id="form1" min="1" name="Cantidad" value="1" type="number" class="form-control mt-1 mb-2"
-            placeholder="Seleccionar Disponibilidad" />
-          <h5>Seleccionar Categoría</h5>
+    <form action="" method="post" id="editarP">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 mt-3 mb-3">
+          <img src="img/Polera.png" class="img-thumbnail" alt="...">
+          <input type="file" name="imagen" id="imagen" accept=".jpg,.png"/>
+        </div>
+        <div class="col-md-6 col-sm-12 mt-3 mb-3">
+          <div class="row px-3">
+            <label for="nombreProducto">
+              Nombre del Producto
+            </label>
+            <input type="text" class="form-control mt-1 mb-2" name="nombreProducto" id="nombreProducto"
+              placeholder="Ingresar Nombre del Producto" required>
+            <label for="precioP">
+              Precio del Producto
+            </label>
+            <input id="form1" min="0" name="precioP" id="precioP" value="0" type="number" class="form-control mt-1 mb-2"
+              placeholder="Ingrese Precio del Producto" required />
+            <label for="descripcionCorta">
+              Descripción Corta
+            </label>
+            <input type="text" class="form-control mt-1 mb-2" name="descripcionCorta" id="descripcionCorta"
+              placeholder="Ingresar Descripción Corta" required>
+            <label for="descripcionDetallada">
+              Descripción Detallada
+            </label>
+            <textarea type="text" class="form-control mt-1 mb-2" name="descripcionDetallada" id="descripcionDetallada"
+              placeholder="Ingresar Descripción Detallada" required></textarea>
+            <label for="cantidad">Seleccionar Cantidad Disponible</label>
+            <input id="form1" min="0" name="cantidad" id="cantidad" value="0" type="number"
+              class="form-control mt-1 mb-2" placeholder="Seleccionar Disponibilidad" required />
+            <label for="categoria">Seleccionar Categoría</label>
 
-          <select class="form-select" id="inputGroupSelect02">
-            <option selected>Escoge La Categoria</option>
-            <option value="1">Polera</option>
-            <option value="2">Pantalones</option>
-            <option value="3">Zapatillas</option>
-            <option value="4">Polerones</option>
-            <option value="5">Chaquetas</option>
-          </select>
+            <select class="form-select" id="categoria" name="categoria" required>
+              <option selected>Escoge La Categoria</option>
+              <option value="1">Polera</option>
+              <option value="2">Pantalones</option>
+              <option value="3">Zapatillas</option>
+              <option value="4">Polerones</option>
+              <option value="5">Chaquetas</option>
+            </select>
 
-          <a href="" class="btn btn-primary px-3 mt-3">Guardar Cambios</a>
+            <button type="submit" href="" class="btn btn-primary px-3 mt-3">Agregar Producto</button>
+          </div>
         </div>
       </div>
-    </div>
-
+    </form>
   </div>
 
 
@@ -137,11 +138,14 @@
       <!-- Section: Redes Sociales -->
       <section class="mb-4">
         <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://es-la.facebook.com/" target="_blank" role="button"><i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://es-la.facebook.com/" target="_blank"
+          role="button"><i class="fab fa-facebook-f"></i></a>
         <!-- Twitter -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/?lang=es" target="_blank" role="button"><i class="fab fa-twitter"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/?lang=es" target="_blank"
+          role="button"><i class="fab fa-twitter"></i></a>
         <!-- Instagram -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/?hl=es-la" target="_blank" role="button"><i class="fab fa-instagram"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/?hl=es-la" target="_blank"
+          role="button"><i class="fab fa-instagram"></i></a>
 
       </section>
       <section class="">
@@ -155,7 +159,8 @@
             <div class="col-md-5 col-12">
               <!-- Email input -->
               <div class="form-outline form-white mb-4">
-                <input type="email" id="emailF" name="emailf" class="form-control" placeholder="Correo Electrónico" required/>
+                <input type="email" id="emailF" name="emailf" class="form-control" placeholder="Correo Electrónico"
+                  required />
               </div>
             </div>
             <div class="col-auto">

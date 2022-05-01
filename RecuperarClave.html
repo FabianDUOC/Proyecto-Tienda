@@ -11,7 +11,7 @@
   <script src="https://kit.fontawesome.com/35863c2e47.js" crossorigin="anonymous"></script>
   <link rel="icon" href="img/logo.png">
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -95,18 +95,19 @@
   <!--Formulario-->
   <div class="container py-3 mb-5">
     <div class="row py-5">
-      <form class="col-md-9 m-auto" method="post" role="form" action="">
+      <form class="col-md-9 m-auto" role="form" action="" method="post" id="formRecupClave">
         <div class="mb-3">
-          <label for="inputsubject">Correo Electrónico</label>
-          <input type="email" required class="form-control mt-1" name="Correo1" id="Correo1"
+          <label for="correo1">Correo Electrónico</label>
+          <input type="email" required class="form-control mt-1" name="correo1" id="correo1"
             placeholder="Ingresar correo electrónico">
         </div>
         <div class="mb-3">
-          <label for="inputsubject">Repetir Correo Electrónico</label>
-          <input type="email" required class="form-control mt-1" name="Correo2" id="Correo2"
+          <label for="correo2">Repetir Correo Electrónico</label>
+          <input type="email" required class="form-control mt-1" name="correo2" id="correo2"
             placeholder="Repetir Correo Electrónico">
         </div>
         <div class="d-grid gap-3">
+          <p class="msjAlerta" id="mensajes"></p>
           <button type="submit" href="#" class="btn btn-primary ">Enviar correo de recuperación</button>
         </div>
       </form>
@@ -181,6 +182,8 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
     crossorigin="anonymous"></script>
+
+    <script src="js/validaciones.js"></script>
 </body>
 
 </html>
