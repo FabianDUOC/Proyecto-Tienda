@@ -2,6 +2,28 @@ $(document).ready(function () {
     //FOrmulario INICIO SESIÓN
     $("#iniciar").submit(function (e) {
         e.preventDefault();
+
+        var correo = $("#emailInicio").val();
+
+        let msj = "";
+        let entrar = false;
+
+        $("#msjCorreo").css({ 'color': 'red' });
+
+        if (correo.indexOf('@', 0) == -1 || correo.indexOf('.', 0) == -1) {
+            msj += "El correo electrónico introducido no es válido <br>"
+            entrar = true;
+        }
+
+        if (entrar) {
+            $("#msjCorreo").html(msj);
+        }
+        else {
+            $("#msjCorreo").css({ 'color': 'blue' });
+            $("#msjCorreo").html("Sesión iniciada");
+            $("#formRecupClave")[0].reset();
+        }
+
     })
 
     // FORMULARIO RECUPERAR CONTRASEÑA
@@ -78,14 +100,21 @@ $(document).ready(function () {
         e.preventDefault();
 
         var nom = $("#nombre").val();
+        var correo = $("#email").val();
 
         let msj = "";
         let entrar = false;
 
         $("#mensajes2").html("");
+        $("#msjCorreo").html("");
 
-        if (nom.trim().length < 4) {
-            msj += "EL nombre de tener al menos 4 caracteres <br>";
+        if (nom.trim().length < 4 || nom.trim().length > 10) {
+            msj += "El nombre no tiene la longitud válida <br>";
+            entrar = true;
+        }
+
+        if (correo.indexOf('@', 0) == -1 || correo.indexOf('.', 0) == -1) {
+            $("#msjCorreo").html("El correo electrónico introducido no es válido");
             entrar = true;
         }
 
