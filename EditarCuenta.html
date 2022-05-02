@@ -92,9 +92,11 @@
                     <label>
                         Foto de Perfil
                     </label>
-                    <img src="img/Trabajadora.png" class="img-thumbnail" alt="...">
+                    <div class="ratio ratio-1x1">
+                    <img src="img/Trabajadora.png" class="img-thumbnail" id="foto" alt="...">
+                </div>
                     <!-- Botón elegir imagen -->
-                    <input type="file" name="Foto" id="Foto" accept=".jpg,.png" />
+                    <input type="file" name="Foto" id="fotoInput" accept=".jpg,.png" />
                 </div>
                 <!-- Formulario -->
                 <div class="col-md-6 col-sm-12 mt-3 mb-3">
@@ -240,6 +242,7 @@
         crossorigin="anonymous"></script>
 
     <script src="js/validaciones.js"></script>
+    <script src="js/Varios.js"></script>
 </body>
 
 </html>
