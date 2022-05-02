@@ -13,6 +13,14 @@ $(document).ready(function () {
         let msj = "";
         let entrar = false;
 
+        $("#mensajes").css({ 'color': 'red' });
+        $("#mensajes").html("");
+
+        if (correo1.indexOf('@', 0) == -1 || correo1.indexOf('.', 0) == -1 || correo2.indexOf('@', 0) == -1 || correo2.indexOf('.', 0) == -1) {
+            msj += "El correo electrónico introducido no es válido <br>"
+            entrar = true;
+        }
+
         if (correo1 != correo2) {
             msj += "Los correos ingresados deben ser iguales <br>";
             entrar = true;
@@ -37,6 +45,9 @@ $(document).ready(function () {
 
         let msj = "";
         let entrar = false;
+
+        $("#mensajes").css({ 'color': 'red' });
+        $("#mensajes").html("");
 
         if (claveNu1.trim().length < 6) {
             msj += "La contraseña nueva de tener al menos 6 caracteres <br>";
@@ -70,6 +81,8 @@ $(document).ready(function () {
 
         let msj = "";
         let entrar = false;
+
+        $("#mensajes2").html("");
 
         if (nom.trim().length < 4) {
             msj += "EL nombre de tener al menos 4 caracteres <br>";
@@ -108,25 +121,32 @@ $(document).ready(function () {
         $("#msjNom").html("");
         $("#msjApellidoPa").html("");
         $("#msjApellidoMa").html("");
+        $("#msjCorreo").html("")
         $("#msjDireccion").html("");
         $("#msjRegion").html("");
         $("#msjComuna").html("");
         $("#msjTel").html("");
         $("#msjClave").html("");
 
+        $("#msj").html("");
+
         if (nom.trim().length < 4 || nom.trim().length > 10) {
-            $("#msjNom").html("EL nombre no tiene la longitud válida");
+            $("#msjNom").html("El nombre no tiene la longitud válida");
             entrar = true;
         }
 
         if (apellidoPa.trim().length < 4 || apellidoPa.trim().length > 10) {
-            $("#msjApellidoPa").html("EL apellido no tiene la longitud válida");
+            $("#msjApellidoPa").html("El apellido no tiene la longitud válida");
             entrar = true;
         }
 
         if (apellidoMa.trim().length < 4 || apellidoMa.trim().length > 10) {
-            $("#msjApellidoMa").html("EL apellido no tiene la longitud válida");
+            $("#msjApellidoMa").html("El apellido no tiene la longitud válida");
             entrar = true;
+        }
+
+        if (email.indexOf('@', 0) == -1 || email.indexOf('.', 0) == -1) {
+            $("#msjCorreo").html("El correo electrónico introducido no es válido")
         }
 
         if (direcc.trim().length < 4) {
@@ -139,8 +159,8 @@ $(document).ready(function () {
             entrar = true;
         }
 
-        if (numTel.trim().length != 9) {
-            $("#msjTel").html("Numero de telefono de 9 dígitos");
+        if (numTel.trim().length != 11) {
+            $("#msjTel").html("Numero de telefono de 11 dígitos");
             entrar = true;
         }
 
@@ -191,18 +211,20 @@ $(document).ready(function () {
         $("#msjComuna").html("");
         $("#msjTel").html("");
 
+        $("#msj").html("");
+
         if (nom.trim().length < 4 || nom.trim().length > 10) {
-            $("#msjNom").html("EL nombre no tiene la longitud válida");
+            $("#msjNom").html("El nombre no tiene la longitud válida");
             entrar = true;
         }
 
         if (apellidoPa.trim().length < 4 || apellidoPa.trim().length > 10) {
-            $("#msjApellidoPa").html("EL apellido no tiene la longitud válida");
+            $("#msjApellidoPa").html("El apellido no tiene la longitud válida");
             entrar = true;
         }
 
         if (apellidoMa.trim().length < 4 || apellidoMa.trim().length > 10) {
-            $("#msjApellidoMa").html("EL apellido no tiene la longitud válida");
+            $("#msjApellidoMa").html("El apellido no tiene la longitud válida");
             entrar = true;
         }
 
@@ -216,8 +238,8 @@ $(document).ready(function () {
             entrar = true;
         }
 
-        if (numTel.trim().length != 9) {
-            $("#msjTel").html("Numero de telefono de 9 dígitos");
+        if (numTel.trim().length != 11) {
+            $("#msjTel").html("Numero de telefono de 11 dígitos");
             entrar = true;
         }
 
@@ -252,10 +274,12 @@ $(document).ready(function () {
         $("#msjCantidad").html("");
         $("#msjCategorias").html("");
 
+        $("#msj").html("");
+
         let entrar = false;
 
         if (nombre.trim().length < 4 || nombre.trim().length > 15) {
-            $("#msjNombre").html("EL nombre de producto no tiene la longitud válida");
+            $("#msjNombre").html("El nombre de producto no tiene la longitud válida");
             entrar = true;
         }
 
@@ -311,10 +335,12 @@ $(document).ready(function () {
         $("#msjCantidad").html("");
         $("#msjCategorias").html("");
 
+        $("#msj").html("");
+
         let entrar = false;
 
         if (nombre.trim().length < 4 || nombre.trim().length > 15) {
-            $("#msjNombre").html("EL nombre de producto no tiene la longitud válida");
+            $("#msjNombre").html("El nombre de producto no tiene la longitud válida");
             entrar = true;
         }
 
@@ -356,8 +382,32 @@ $(document).ready(function () {
     $("#formMensaje").submit(function (e) {
         e.preventDefault();
         $("#mensajes").css({ 'color': 'blue' });
-        $("#mensajes").html("Mensaje enviado satisfactoriamente")
+        alert("Mensaje enviado satisfactoriamente")
         $("#formMensaje")[0].reset();
+    })
+
+    // FORMULARIO FOOTER
+    $("#suscripcion").submit(function(e){
+        e.preventDefault();
+
+        var correo = $("#emailF").val();
+
+        $("#mensajes").html("")
+        
+        let entrar = false;
+
+        if (correo.indexOf('@', 0) == -1 || correo.indexOf('.', 0) == -1) {
+            $("#mensajes").html("El correo electrónico introducido no es válido")
+            entrar = true;
+        }
+
+        if (entrar) {
+        }
+        else {
+            alert("Suscrito correctamente");
+            $("#suscripcion")[0].reset();
+        }
+
     })
 
 

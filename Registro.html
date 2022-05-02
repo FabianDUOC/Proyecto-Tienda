@@ -14,6 +14,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
+<style>
+  input[type=number]::-webkit-outer-spin-button,
+  input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+</style>
+
 <body>
   <!--
     ======================================================================================================= -->
@@ -114,6 +122,7 @@
             </label>
             <input type="email" class="form-control mt-1 mb-2" name="correoRegistro" id="correoRegistro"
               placeholder="Ingresar correo electrónico" required>
+            <p class="msjAlerta" id="msjCorreo"></p>
             <label for="Direccion">
               Direccion
             </label>
@@ -152,7 +161,7 @@
               Número
               Telefónico
             </label>
-            <input type="number" class="form-control mt-1 mb-2" name="telefono" id="telefono"
+            <input type="number" class="form-control mt-1 mb-2" name="telefono" id="telefono" min="1"
               placeholder="Ingresar Número Telefónico" required>
             <p class="msjAlerta" id="msjTel"></p>
             <label for="clave1">
@@ -195,7 +204,7 @@
 
       </section>
       <section class="">
-        <form action="">
+        <form action="" method="post" id="suscripcion">
           <div class="row d-flex justify-content-center">
             <div class="col-auto">
               <p class="pt-2">
@@ -216,6 +225,7 @@
               </button>
             </div>
           </div>
+          <p class="msjAlerta" id="mensajes"></p>
         </form>
       </section>
 

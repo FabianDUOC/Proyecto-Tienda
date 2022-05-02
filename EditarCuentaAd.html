@@ -13,6 +13,13 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
+<style>
+    input[type=number]::-webkit-outer-spin-button,
+    input[type=number]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+</style>
 
 <body>
     <!--
@@ -163,7 +170,7 @@
                             Telefónico
                         </label>
                         <input type="number" class="form-control mt-1 mb-2" name="telefono" id="telefono"
-                            placeholder=" 9 9898 4584" required>
+                            placeholder="+56 9 9898 4584" required>
                         <p class="msjAlerta" id="msjTel"></p>
                         <p class="msjAlerta" id="msj"></p>
                         <button type="submit" href="/CuentaAdmin.html" class="btn btn-primary mb-2">Guardar
@@ -193,7 +200,7 @@
 
             </section>
             <section class="">
-                <form action="">
+                <form action="" method="post" id="suscripcion">
                     <div class="row d-flex justify-content-center">
                         <div class="col-auto">
                             <p class="pt-2">
