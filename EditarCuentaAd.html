@@ -94,31 +94,43 @@
                     </label>
                     <img src="img/Trabajador.png" class="img-thumbnail" alt="...">
                     <!-- Botón elegir imagen -->
-                    <input type="file" name="Foto" id="Foto" accept=".jpg,.png" required />
+                    <input type="file" name="Foto" id="Foto" accept=".jpg,.png" />
                 </div>
                 <!-- Formulario -->
                 <div class="col-md-6 col-sm-12 mt-3 mb-3">
                     <div class="row px-3">
-                        <label for="nombreCompleto">
-                            Nombre Completo
+                        <label for="nombre">
+                            Nombre
                         </label>
-                        <input type="text" class="form-control mt-1 mb-2" name="nombreCompleto" id="nombreCompleto"
-                            placeholder="Miguel Doggy" required>
+                        <input type="text" class="form-control mt-1 mb-2" name="nombre" id="nombre" placeholder="Miguel"
+                            required>
+                        <p class="msjAlerta" id="msjNom"></p>
+                        <label for="apellidoPa">
+                            Apellido Paterno
+                        </label>
+                        <input type="text" class="form-control mt-1 mb-2" name="apellidoPa" id="apellidoPa"
+                            placeholder="Doggy" required>
+                        <p class="msjAlerta" id="msjApellidoPa"></p>
+                        <label for="apellidoMa">
+                            Apellido Materno
+                        </label>
+                        <input type="text" class="form-control mt-1 mb-2" name="apellidoMa" id="apellidoMa"
+                            placeholder="Ford" required>
+                        <p class="msjAlerta" id="msjApellidoMa"></p>
                         <label for="email">
                             Correo Electrónico
                         </label>
                         <input disabled type="text" class="form-control mt-1 mb-2" name="email" id="email"
-                            placeholder="mi.doggy@trabajo.cl" required>
+                            placeholder="mi.doggy@trabajo.cl">
                         <label for="direccion">
                             Dirección
                         </label>
                         <input type="text" class="form-control mt-1 mb-2" name="direccion" id="direccion"
-                            placeholder="Las Pepitas #339" required>
+                            placeholder="Las Salmueras #9190" required>
+                        <p class="msjAlerta" id="msjDireccion"></p>
                         <div class="row">
-                            <div class="col-sm-12 col-lg-6">
-                                <label for="region">
-                                    Región
-                                </label>
+                            <div class="col-sm-12 col-md-6">
+                                <label for="region">Región</label>
                                 <div class="input-group mb-3">
                                     <select class="form-select" id="region" name="region" required>
                                         <option selected>Escoge tu Región</option>
@@ -127,17 +139,21 @@
                                         <option value="3">Coquimbo</option>
                                     </select>
                                 </div>
+                                <p class="msjAlerta" id="msjRegion"></p>
                             </div>
-                            <div class="col-sm-12 col-lg-6">
+                            <div class="col-sm-12 col-md-6">
                                 <label for="comuna">
                                     Comuna
                                 </label>
-                                <select class="form-select mb-3" id="comuna" name="comuna" required>
-                                    <option selected>Escoge tu Comuna</option>
-                                    <option value="1">Recoleta</option>
-                                    <option value="2">Huechuraba</option>
-                                    <option value="3">Quilicura</option>
-                                </select>
+                                <div class="input-group mb-3">
+                                    <select class="form-select" id="comuna" name="comuna" required>
+                                        <option selected>Escoge tu Comuna</option>
+                                        <option value="1">Recoleta</option>
+                                        <option value="2">Huechuraba</option>
+                                        <option value="3">Quilicura</option>
+                                    </select>
+                                </div>
+                                <p class="msjAlerta" id="msjComuna"></p>
                             </div>
                         </div>
                         <label>
@@ -145,7 +161,9 @@
                             Telefónico
                         </label>
                         <input type="number" class="form-control mt-1 mb-2" name="telefono" id="telefono"
-                            placeholder="9 9988 4484" required>
+                            placeholder=" 9 9898 4584" required>
+                        <p class="msjAlerta" id="msjTel"></p>
+                        <p class="msjAlerta" id="msj"></p>
                         <button type="submit" href="/CuentaAdmin.html" class="btn btn-primary mb-2">Guardar
                             Cambios</button>
                         <a href="/CambiarClaveAd.html" class="btn btn-danger">Cambiar Contraseña</a>
@@ -220,6 +238,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
         crossorigin="anonymous"></script>
+
+    <script src="js/validaciones.js"></script>
 </body>
 
 </html>

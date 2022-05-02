@@ -82,11 +82,11 @@
 ======================================================================================================= -->
 
   <div class="container">
-    <form action="" method="post" id="agregarP">
+    <form action="" method="post" id="editarP">
       <div class="row">
         <div class="col-md-6 col-sm-12 mt-3 mb-3">
           <img src="img/Zapatillas.png" class="img-thumbnail" alt="...">
-          <input type="file" name="imagen" id="imagen" accept=".jpg,.png"/>
+          <input type="file" name="imagen" id="imagen" accept=".jpg,.png" />
         </div>
         <div class="col-md-6 col-sm-12 mt-3 mb-3">
           <div class="row px-3">
@@ -95,34 +95,42 @@
             </label>
             <input type="text" class="form-control mt-1 mb-2" name="nombreProducto" id="nombreProducto"
               placeholder="Ingresar Nombre del Producto" required>
+            <p class="msjAlerta" id="msjNombre"></p>
             <label for="precioP">
               Precio del Producto
             </label>
-            <input id="form1" min="0" name="precioP" id="precioP" value="0" type="number" class="form-control mt-1 mb-2"
+            <input id="precioP" min="0" name="precioP" value="0" type="number" class="form-control mt-1 mb-2"
               placeholder="Ingrese Precio del Producto" required />
+            <p class="msjAlerta" id="msjPrecio"></p>
             <label for="descripcionCorta">
               Descripción Corta
             </label>
             <input type="text" class="form-control mt-1 mb-2" name="descripcionCorta" id="descripcionCorta"
               placeholder="Ingresar Descripción Corta" required>
+            <p class="msjAlerta" id="msjCorta"></p>
             <label for="descripcionDetallada">
               Descripción Detallada
             </label>
             <textarea type="text" class="form-control mt-1 mb-2" name="descripcionDetallada" id="descripcionDetallada"
               placeholder="Ingresar Descripción Detallada" required></textarea>
+            <p class="msjAlerta" id="msjDetallada"></p>
             <label for="cantidad">Seleccionar Cantidad Disponible</label>
-            <input id="form1" min="0" name="cantidad" id="cantidad" value="0" type="number"
-              class="form-control mt-1 mb-2" placeholder="Seleccionar Disponibilidad" required />
+            <input id="cantidad" min="0" name="cantidad" value="0" type="number" class="form-control mt-1 mb-2"
+              placeholder="Seleccionar Disponibilidad" required />
+            <p class="msjAlerta" id="msjCantidad"></p>
             <label for="categoria">Seleccionar Categoría</label>
 
+
             <select class="form-select" id="categoria" name="categoria" required>
-              <option selected>Escoge La Categoria</option>
+              <option selected>Categoría</option>
               <option value="1">Polera</option>
               <option value="2">Pantalones</option>
               <option value="3">Zapatillas</option>
               <option value="4">Polerones</option>
               <option value="5">Chaquetas</option>
             </select>
+            <p class="msjAlerta" id="msjCategorias"></p>
+            <p class="msjAlerta" id="msj"></p>
 
             <button type="submit" href="" class="btn btn-primary px-3 mt-3">Agregar Producto</button>
           </div>
@@ -200,6 +208,8 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
     crossorigin="anonymous"></script>
+
+  <script src="js/validaciones.js"></script>
 </body>
 
 </html>

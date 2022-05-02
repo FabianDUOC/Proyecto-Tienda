@@ -91,12 +91,24 @@
       <div class="col-lg-6 col-sm-10 mt-3 mb-3">
         <div class="row">
           <form action="" method="post" id="formRegistro">
-            <label for="nombreCompleto">
-              Nombre Completo
+            <label for="nombre">
+              Nombre
             </label>
-            <input type="text" class="form-control mt-1 mb-2" name="nomCompleto" id="nomCompleto"
-              placeholder="Ingresar Nombre Completo" required>
-              <p class="msjAlerta" id="msjNom"></p>
+            <input type="text" class="form-control mt-1 mb-2" name="nombre" id="nombre" placeholder="Ingresar Nombre"
+              required>
+            <p class="msjAlerta" id="msjNom"></p>
+            <label for="apellidoPa">
+              Apellido Paterno
+            </label>
+            <input type="text" class="form-control mt-1 mb-2" name="apellidoPa" id="apellidoPa"
+              placeholder="Ingresar Primer Apellido" required>
+            <p class="msjAlerta" id="msjApellidoPa"></p>
+            <label for="apellidoMa">
+              Apellido Materno
+            </label>
+            <input type="text" class="form-control mt-1 mb-2" name="apellidoMa" id="apellidoMa"
+              placeholder="Ingresar Segundo Apellido" required>
+            <p class="msjAlerta" id="msjApellidoMa"></p>
             <label for="correoRegistro">
               Correo Electrónico
             </label>
@@ -107,7 +119,7 @@
             </label>
             <input type="text" class="form-control mt-1 mb-2" name="direccion" id="direccion"
               placeholder="Ingresar Direccion" required>
-              <p class="msjAlerta" id="msjDireccion"></p>
+            <p class="msjAlerta" id="msjDireccion"></p>
             <div class="row">
               <div class="col-sm-12 col-md-6">
                 <label for="region">Región</label>
@@ -142,7 +154,7 @@
             </label>
             <input type="number" class="form-control mt-1 mb-2" name="telefono" id="telefono"
               placeholder="Ingresar Número Telefónico" required>
-              <p class="msjAlerta" id="msjTel"></p>
+            <p class="msjAlerta" id="msjTel"></p>
             <label for="clave1">
               Contraseña
             </label>
